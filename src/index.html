@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="rtl">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -7,7 +7,112 @@
     <link rel="stylesheet" href="../dist/style.css" />
     <title>Document</title>
   </head>
-  <body>
-    <h1 class="text-3xl font-bold underline">Hello world!</h1>
+  <body
+    class="text-slate-700 bg-gradient-to-b from-purple-700/40 via-purple-600/40 to-pink-600/30 w-screen min-h-screen flex justify-center items-center"
+  >
+    <!--container start-->
+    <section
+      class="grid grid-cols-2 w-full max-w-3xl bg-slate-50 rounded-lg overflow-hidden"
+    >
+      <!--section right start-->
+      <div>
+        <img src="../images/hello.jpg" class="h-full w-full object-cover" />
+      </div>
+      <!--section right end-->
+      <!--section left start-->
+      <form class="grid gap-12 p-10 content-start">
+        <!--form header start-->
+        <header>
+          <h1 class="text-xl font-bold">اطلاعات ثبت نام</h1>
+        </header>
+        <!--form header end-->
+        <div class="grid gap-12">
+          <div class="relative w-full">
+            <input
+              type="text"
+              id="name"
+              class="w-full border-b border-slate-300 bg-transparent outline-none peer focus:border-slate-700"
+            />
+            <label
+              for="name"
+              class="absolute bottom-0 right-0 p-1 text-sm text-slate-500 peer-focus:bottom-full peer-focus:text-slate-700 transition-all cursor-text"
+              >نام</label
+            >
+          </div>
+          <div class="relative w-full">
+            <input
+              type="text"
+              id="family"
+              class="w-full border-b border-slate-300 bg-transparent outline-none peer focus:border-slate-700"
+            />
+            <label
+              for="family"
+              class="cursor-text absolute bottom-0 right-0 p-1 text-sm text-slate-500 peer-focus:bottom-full peer-focus:text-slate-700 transition-all"
+              >نام خانوادگی</label
+            >
+          </div>
+          <div class="relative w-full">
+            <input
+              type="text"
+              id="birthday"
+              class="w-full border-b border-slate-300 bg-transparent outline-none peer focus:border-slate-700"
+            />
+            <label
+              for="birthday"
+              class="absolute bottom-0 right-0 p-1 text-sm text-slate-500 peer-focus:bottom-full cursor-text peer-focus:text-slate-700 transition-all"
+              >تاریخ تولد</label
+            >
+          </div>
+          <div class="relative w-full">
+            <input
+              type="text"
+              id="gender"
+              class="w-full border-b border-slate-300 bg-transparent outline-none peer focus:border-slate-700"
+            />
+            <label
+              for="gender"
+              class="absolute bottom-0 right-0 p-1 text-sm text-slate-500 peer-focus:bottom-full cursor-text peer-focus:text-slate-700 transition-all"
+            >
+              جنسیت</label
+            >
+          </div>
+          <div class="relative w-full">
+            <input
+              type="email"
+              id="email"
+              class="w-full border-b border-slate-300 bg-transparent outline-none peer focus:border-slate-700"
+            />
+            <label
+              for="email"
+              class="absolute bottom-0 right-0 p-1 text-sm text-slate-500 peer-focus:bottom-full cursor-text peer-focus:text-slate-700 transition-all"
+            >
+              ایمیل</label
+            >
+          </div>
+          <div class="relative w-full">
+            <input
+              type="text"
+              id="phone"
+              class="w-full border-b border-slate-300 bg-transparent outline-none peer focus:border-slate-700"
+            />
+            <label
+              for="phone"
+              class="absolute bottom-0 right-0 p-1 text-sm text-slate-500 peer-focus:bottom-full cursor-text peer-focus:text-slate-700 transition-all"
+            >
+              شماره همراه</label
+            >
+          </div>
+        </div>
+        <footer>
+          <button
+            class="px-8 bg-green-500 font-bold text-white rounded-full hover:bg-green-700 text-sm py-1 active:scale-105 transition-all"
+          >
+            ارسال
+          </button>
+        </footer>
+      </form>
+      <!--section left end-->
+    </section>
+    <!--container end-->
   </body>
 </html>
